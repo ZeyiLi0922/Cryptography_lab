@@ -1,13 +1,3 @@
-/***********************************************************************
-Copyright Buu Information Security Major
-File Name: caesar.c  
-Author：Li Zeyi 
-ID: 2021240381019    
-Version: v6.0        
-Date: 2023.3.10    
-Description: 对一串字符进行简单的凯撒加密和解密          
-************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>//头文件引入string.h，后面会用到判断两个字符串是否相等的函数strcmp();
@@ -15,12 +5,6 @@ Description: 对一串字符进行简单的凯撒加密和解密
 //const int N = 1e5 + 10;
 //char g_str[N];//定义一个全局变量str，用来存放和转移文档中的内容
 
-/***********************************************************************
-Function Name: encryption  
-Parameters: 两个字符型数组，输入文件为input_file，输出文件为output_file
-Return: void类型函数，不需要返回值
-Description: 通过简单的凯撒加密算法，将一个文件中的字符串进行加密    
-************************************************************************/
 void encryption(char input_file[], char output_file[])
 {
     FILE *fp1;  //定义一个FILE类型的指针，指向要打开的文件。
@@ -83,12 +67,6 @@ void encryption(char input_file[], char output_file[])
     str = NULL;//将指针指向NULL
 }
 
-/***********************************************************************
-Function Name: decryption              
-Parameters: 两个字符型数组，输入文件为input_file，输出文件为output_file
-Return: void类型函数，不需要返回值
-Description: 解密函数，可以将上一次加密的字符串进行解密 
-************************************************************************/
 void decryption(char input_file[], char output_file[])
 {
     FILE *fp;
